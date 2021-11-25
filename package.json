@@ -1,0 +1,52 @@
+{
+  "name": "webpack-5-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/axios": "^0.14.0",
+    "@types/classnames": "^2.3.1",
+    "@types/nanoid": "^3.0.0",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-config-airbnb-typescript": "^16.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "nanoid": "^3.1.30",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  }
+}
