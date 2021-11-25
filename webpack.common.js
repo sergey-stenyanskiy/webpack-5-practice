@@ -42,8 +42,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff2?|eot|ttf|otf|svg)$/i,
+        test: /\.(woff2?|ttf|otf)$/i,
         type: 'asset'
+      },
+      {
+        test: /\.svg$/i,
+        type: 'asset/inline'
       },
       {
         test: /\.(png|gif|jpe?g)$/i,
