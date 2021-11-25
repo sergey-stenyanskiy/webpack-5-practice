@@ -5,6 +5,10 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const miniCssExtractPlugin = new MiniCssExtractPlugin();
+
 const { merge } = require('webpack-merge');
 
 const common = require('./webpack.common');
@@ -36,8 +40,38 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin(index),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin()
   ],
+  module: {
+    rules: [
+      {
+        test: /\.s(a|c)ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              esModule: false
+            }
+          },
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              esModule: false
+            }
+          }
+        ]
+      },
+    ]
+  },
   optimization: {
     splitChunks: {
       chunks: 'all'
