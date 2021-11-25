@@ -17,7 +17,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'source-map',
   entry: {
-    index: './src/index.js'
+    index: './src/index.tsx'
   },
   output: {
     filename: '[name].bundle.js',
