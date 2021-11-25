@@ -28,16 +28,6 @@ module.exports = merge(common, {
     filename: '[name].bundle.js',
     path: path.join(__dirname, 'build')
   },
-  devServer: {
-    host: 'localhost',
-    port: 8080,
-    devMiddleware: {
-      writeToDisk: true,
-    },
-    historyApiFallback: {
-      index: '/'
-    }
-  },
   plugins: [
     new HtmlWebpackPlugin(index),
     new CleanWebpackPlugin(),
