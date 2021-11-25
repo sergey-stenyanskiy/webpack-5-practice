@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -24,7 +26,7 @@ module.exports = merge(common, {
     path: path.join(__dirname, 'dist')
   },
   devServer: {
-    host: "localhost",
+    host: 'localhost',
     port: 8080,
     devMiddleware: {
       writeToDisk: true,

@@ -21,6 +21,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "webpack.common.js",
+    "webpack.dev.js"
   ]
 }

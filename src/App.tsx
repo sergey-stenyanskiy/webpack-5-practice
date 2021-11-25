@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default () => {
-  return (
-    <div className="app">
-      Hello, world!
-    </div>
-  );
-}
+export default () => (
+  <div className="app">
+    Hello, world!
+  </div>
+)
